@@ -24,6 +24,15 @@ terraform {
   access_key = var.access_key
   secret_key = var.secret_key
 
+  region = var.region
+
+  default_tags {
+    tags = {
+      Environment = "Dev"
+      Name        = "ABC Team"
+    }
+  }
+
 }*/
 
 
@@ -34,6 +43,13 @@ provider "aws" {
     session_name = "Test_Session"
   }
   region = var.region
+
+  default_tags {
+    tags = {
+      Environment = "Dev"
+      Owner        = "ABC Team"
+    }
+  }
 }
 
 

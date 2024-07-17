@@ -1,13 +1,9 @@
 //S3 Bucket Creation
 resource "aws_s3_bucket" "netspi_s3_bucket" {
   bucket = var.s3_bucket_name
-
   tags = {
     Name        = var.s3_bucket_name
-    Environment = "Dev"
-    Owner = "ABC Team"
   }
-
 }
 
 //Blocking Public Access
