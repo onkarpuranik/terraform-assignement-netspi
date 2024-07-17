@@ -47,5 +47,5 @@ variable "ami_id" {
 
 variable "efs_mount_folder" {
   description = "Folder mount point to use for application in ec2"
-  default = "/usr/test-application-netspi"
+  default = "/data/test"
 }
