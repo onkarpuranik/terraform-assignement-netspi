@@ -27,3 +27,9 @@ output "efs_volume_id" {
   description = " EFS Volume ID "
   value = aws_efs_file_system.netspi_efs.id
 }
+
+
+output "ec2_instance_id" {
+  description = " EC2 Instance ID "
+  value = aws_instance.sample_app_instance.id
+}

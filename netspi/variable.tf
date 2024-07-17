@@ -39,3 +39,13 @@ variable "subnet_cidr" {
   description = "subnet CIDR Block for IP address spaces"
   default = "10.0.1.0/24"
 }
+
+variable "ami_id" {
+  description = "AMI ID for Instance creation. Default in amazon linux 2"
+  default = "ami-0c55b159cbfafe1f0"
+}
+
+variable "efs_mount_folder" {
+  description = "Folder mount point to use for application in ec2"
+  default = "/usr/test-application-netspi"
+}
